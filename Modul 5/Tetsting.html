@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            width: calc(33.333% - 20px);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Adjust these values if needed */
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>Gallery Example</title>
+</head>
+<body>
+    <div class="gallery">
+        <img class="gallery-item" src="img/1.jpg" alt="">
+        <img class="gallery-item" src="img/2.jpg" alt="">
+        <img class="gallery-item" src="img/3.jpg" alt="">
+        <img class="gallery-item" src="img/4.jpg" alt="">
+        <img class="gallery-item" src="img/5.jpg" alt="">
+        <img class="gallery-item" src="img/6.JPG" alt="">
+        <img class="gallery-item" src="img/7.JPG" alt="">
+        <img class="gallery-item" src="img/8.jpg" alt="">
+        <img class="gallery-item" src="img/9.jpg" alt="">
+        <img class="gallery-item" src="img/10.jpg" alt="">
+        <img class="gallery-item" src="img/11.jpg" alt="">
+        <img class="gallery-item" src="img/12.jpg" alt="">
+        <img class="gallery-item" src="img/13.jpeg" alt="">
+        <img class="gallery-item" src="img/14.jpg" alt="">
+        <img class="gallery-item" src="img/15.jpg" alt="">
+        <img class="gallery-item" src="img/16.jpg" alt="">
+        <img class="gallery-item" src="img/17.jpg" alt="">
+        <img class="gallery-item" src="img/18.jpg" alt="">
+    </div>
+</body>
+</html>

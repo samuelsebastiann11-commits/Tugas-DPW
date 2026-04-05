@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time & Date</title>
+    <style>
+        .wkwkwk {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wkwkwk">
+        <h2>Semoga harimu selalu menyenangkan</h2>
+        <p id="tempat_tanggal"></p>
+    </div>
+
+    <script type="text/javascript">
+        function show_date() {
+            var now = new Date();
+            document.getElementById("tempat_tanggal").innerHTML = now.toLocaleString();
+            setTimeout(show_date, 1000);
+        }
+        show_date();
+    </script>
+</body>
+
+</html>

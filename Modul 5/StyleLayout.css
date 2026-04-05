@@ -1,0 +1,24 @@
+.inti {
+    display: grid;
+    grid-template-columns: 20% 45% 35%;
+    background-color: cornflowerblue;
+    text-align: center;
+    border: 2px solid springgreen;
+}
+
+.inti > div {
+    border: 2px solid springgreen;
+    padding: 4%;
+}
+
+.headerrr {
+    grid-column: 1/4;
+}
+
+.menuuu {
+    grid-row: 2/4;
+}
+
+.footerrr {
+    grid-column: 2/4;
+}

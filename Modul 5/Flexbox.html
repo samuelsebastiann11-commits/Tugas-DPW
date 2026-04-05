@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Belajar Flex Box</title>
+
+        <style>
+            .wadah_flex {
+                display: flex;
+                background-color: aqua;
+                flex-flow: row wrap-reverse;
+                justify-content: center;
+            }
+
+            .wadah_flex > div {
+                background-color: blueviolet;
+                margin: 10px;
+                padding: 10px;
+                font-size: 30px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+
+        </div>
+        <p>Kesimpulan skenario 1 adalah : flex digunakan untuk menampilkan
+            sebuah div/list dengan cara horizontal.
+        </p>
+        <p>Kesimpulan skenario 2 adalah : membuktikan bahwa flex digunakan
+             untuk menampilkan div/list secara horizontal.
+        </p>
+        <p>
+            Kesimpulan skenario 3 adalah : elemen reverse digunakan untuk membalikkan urutan dalam flex.
+        </p>
+        <p>
+            Kesimpulan skenario 4 adalah : style flex-wrap digunakan untuk 
+            mengatur posisi teks ketika layar sudah tidak cukup.
+        </p>
+        <p>
+            Kesimpulan skenario 5 adalah : elemen flex-flow digunakan untuk menggabungkan flex-directiom (row) 
+            dan flex-wrap (wrap-reverse)
+        </p>
+        <p>
+            Kesimpulan skenario 6 adalah : elemen justify-content digunakan untuk mengatur posisi text.
+        </p>
+
+    </body>
+</html>

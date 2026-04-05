@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Download Dialog with Progress Bar</title>
+    <script type=”text/javascript” src=”jquery.min.js”></script>
+    <script type=”text/javascript” src=”jquery.easyui.min.js”></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-easyui/1.4.5/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-easyui/1.4.5/themes/icon.css">
+</head>
+
+<body>
+    <div id="downloadDialog" style="width:400px;height:200px;padding:10px" title="Download">
+        <div style="margin-bottom:10px">
+            <progress class="easyui-progressbar" id="downloadProgress" style="width:380px;height:20px;"></progress>
+        </div>
+        <div style="text-align:center">
+            <a href="#" class="easyui-linkbutton" onclick="downloadFile()">Start Download</a>
+        </div>
+    </div>
+    <script>
+        function updateProgress(percent) {
+            $('#downloadProgress').progressbar('setValue', percent);
+        }
+
+        function createDownloadDialog() {
+            $('#downloadDialog').dialog({
+                buttons: [{
+                    text: 'Close',
+                    handler: function () {
+                        $('#downloadDialog').dialog('close');
+                    }
+                }]
+            });
+        }
+
+        function downloadFile() {
+            createDownloadDialog();
+            updateProgress(0);
+            // Simulate download process
+            for (var i = 0; i <= 100; i++) {
+                updateProgress(i);
+                // Wait for 100 milliseconds
+                setTimeout(function () { }, 100);
+            }
+            updateProgress(100);
+            // Simulate download complete
+            setTimeout(function () {
+                $('#downloadDialog').dialog('close');
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>

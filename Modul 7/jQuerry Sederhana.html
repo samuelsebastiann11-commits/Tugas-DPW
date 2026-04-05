@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuerry</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h2>Merubah Konten Dengan jQuery</h2>
+
+    <p id="my_paragraph">Ini adalah paragraf.</p>
+
+    <button id="my_button">Ubah Konten</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#my_button").click(function () {
+                $("#my_paragraph").html("Konten telah dirubah!");
+            });
+        });
+    </script>
+</body>
+
+</html>

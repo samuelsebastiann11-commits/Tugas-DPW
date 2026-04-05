@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cominator Selector</title>
+        <style>
+
+            div p { /* no 1 */
+                color: red;
+            }
+
+            div > p { /* no 2 */
+                background-color: yellow;
+            }
+
+            div + p { /* no 3 */
+                background-color: darkgray;
+            }
+
+            div ~ p { /* no 4 */
+                color: cyan;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p>Maksud div p adalah setiap p elemen yang berada di tag div akan memiliki warna teks yang disetel menjadi merah.</p>
+            <p>Maksud div > p adalah semua elemen p yang ada di dalam div akan mendapatkan warna latar belakang kuning</p>
+        </div>
+
+        <p>Perhatikan bahwa +simbol dalam pemilih mewakili kombinator saudara yang berdekatan, dan digunakan untuk memilih elemen yang segera mengikuti elemen pertama.</p>
+        <p>Dengan kata lain, selector ini akan mencocokkan semua pelemen yang merupakan saudara kandung dari suatu divelemen.</p>
+    </body>
+</html>

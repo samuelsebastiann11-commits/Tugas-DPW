@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Sederhana</title>
+        <link rel="icon" href="gambar/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <form target="_self" method="get" action="/action_page.php">
+            <label for="depan">Nama depan:</label> <br>
+            <input type="text" name="i_name" id="depan" value="Budi"> <br>
+            <label for="n_belakang">Nama Belakang:</label> <br>
+            <input type="text" name="i_belakang" id="n_belakang" value="Prawira"> <br><br>
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+            <p>Jika sudah mengisi data lalu mereset akan kembali ke tampilan default yaitu "Budi" dan "Prawira", 
+                jika menekan tombol kirim maka akan mengirim data ke database. <br>
+                Jika menggunakan atribut target _self respons formulir akan ditampilkan di jendela atau tab yang sama di mana formulir itu sendiri berada, 
+                jika menggunakan atribut target _blank, _top, _parent respons formulir akan ditampilkan dalam jendela atau tab browser baru. <br>
+                jika menggunakan atribut target _blank, _top, _parent respons formulir akan ditampilkan dalam jendela atau tab browser baru.<br>
+                Penggunaan atribut method get data dapat dilihat dalam URL dan memiliki batasan ukuran dalam pengiriman data, sedangkan method post data tidak terlihat pada URL.
+            </p>
+        </form>
