@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Menu Makanan dan Minuman Samuel Aldrik Sebastian</title>
+    <link rel="icon" href="GAMBAR MODUL/Gambar Logo.png" sizes="16x16">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- CSS -->
+    <style>
+        .ui-menu {
+            width: 200px;
+        }
+    </style>
+
+    <!-- Javascript -->
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+</head>
+
+<body>
+    <ul id="menu">
+        <li>Daftar Menu</li>
+        <li>
+            <a href="#">Makanan</a>
+            <ul>
+                <li>Sego Bakar</li>
+                <li>Sego Pecel</li>
+                <li>Bakso</li>
+                <li>Mie Ayam</li>
+                <li>Soto</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Minuman</a>
+            <ul>
+                <li>Es Teh</li>
+                <li>Es Degan</li>
+                <li>Alpukat Kocok</li>
+                <li>Es Susu</li>
+                <li>Es Jeruk</li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Snack</a>
+            <ul>
+                <li>Kentang Goreng</li>
+                <li>Keripik Singkong</li>
+                <li>Bakpao</li>
+                <li>Donat Coklat</li>
+                <li>Pancong</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

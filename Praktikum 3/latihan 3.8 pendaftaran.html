@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halaman Beranda Samuel</title>
+        <link rel="icon" href="GAMBAR MODUL/Gambar Logo.png" sizes="16x16">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="SAMUEL ALDRIK SEBASTIAN">
+        <meta name="nim" content="253307057">
+    </head>
+    <body>
+        <h1>Form Penjadwalan Pertemuan Mahasiswa Politeknik Negeri Madiun</h1>
+
+        <div>
+            <form action="proses.php" method="post"></form>
+            <form action="proses.php" method="get"></form>
+                <fieldset>
+                    <legend>Informasi Pribadi</legend> <!-- judul filedset -->
+
+                    <label for="nama" >Nama</label>
+                    <input type="text" name="nama" required> <br> <br>
+                    <input id="nama" type="text" name="nama" required> <br> <br>
+
+                    <label for="phone" >No. Telepon</label>
+                    <input type="text" name="phone" pattern="^0[0-9]{11}$" required> <br> <br>
+                    <input id="phone" type="text" name="phone" pattern="^0[0-9]{11}$" required> <br> <br>
+
+                    <label for="email" >Alamat Email</label>
+                    <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br> <br>
+                    <input id="email" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br> <br>
+
+                    <label for="tglLahir">Tanggal Lahir</label>
+                    <input type="date" name="tglLahir" required>
+                    <input id="tglLahir" type="date" name="tglLahir" min="1987-01-01" max="1993-01-01" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Permintaan Pertemuan</legend> <!-- judul filedset -->
+
+                    <label for="tujuan">Tujuan Pertemuan</label>
+                    <input type="text" name="tujuan" required> <br> <br>
+                    <input id="tujuan" type="text" name="tujuan" required> <br> <br>
+
+                    <label for="rate">Tingkat Kepentingan Pertemuan</label>
+                    <input type="range" name="rate" min="0" max="10" required> <br> <br>
+                    <input id="rate" type="range" name="rate" min="0" max="10" required> <br> <br>
+
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" name="tanggal" required> <br> <br>
+                    <input id="tanggal" type="date" name="tanggal" required> <br> <br>
+
+                    <label for="waktu">Waktu</label>
+                    <input type="time" name="waktu" required>
+                    <input id="waktu" type="time" name="waktu" required>
+
+                </fieldset>
+
+                <br>    <input type="submit" value="Submit"/>
+
+        </div>        
+
+    </body>
