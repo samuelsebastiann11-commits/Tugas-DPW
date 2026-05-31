@@ -1,0 +1,22 @@
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "db_akademik";
+
+$link = mysqli_connect($host, $user, $pass, $db);
+
+if (!$link) {
+    die("Koneksi gagal: " . mysqli_connect_error());
+}
+
+mysqli_set_charset($link, "utf8");
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+$conn->set_charset("utf8");
+?>
